@@ -1,0 +1,5 @@
+---
+permalink: /
+---
+# The Alchemist Encodes #
+
