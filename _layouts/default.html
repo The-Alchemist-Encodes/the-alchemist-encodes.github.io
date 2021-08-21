@@ -1,0 +1,23 @@
+---
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TAC - {{ page.title }}</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="{{ 'assets/css/styles.css' | relative_url }}">
+	</head>
+	<body>
+		{% include header.html %}
+
+		<!-- page content container, needed for CSS magic -->
+		<section id="content-container">
+			<!-- page content -->
+			<section id="content">
+				{{ content }}
+			</section>
+		</section>
+
+		{% include footer.html %}
+	</body>
+</html>

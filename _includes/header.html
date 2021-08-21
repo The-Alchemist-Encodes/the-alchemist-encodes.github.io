@@ -1,0 +1,22 @@
+<!-- header -->
+<header id="header">
+	<!-- Bertha logo and title -->
+	<div id="title-logo">
+		<img id="logo" src="{{ 'assets/images/bertha2.png' | relative_url }}" />
+		<div id="title">
+			<h1>The Alchemist Encodes</h1>
+			<h4>~ For Whom the Autist Encodes ~</h4>
+		</div>
+	</div>
+
+	<!-- navigation bar -->
+	<nav id="navigation-bar">
+		<ul id="navigation-links">
+			{% for n in site.data.nav %}
+			<li>
+				<a href="{{ n.link }}" {% if page.url == n.link %}class="current"{% endif %}>{{ n.name }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</nav>
+</header>
