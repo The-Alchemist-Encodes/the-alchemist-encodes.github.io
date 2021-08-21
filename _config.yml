@@ -1,2 +1,6 @@
 title: The Alchemist Encodes
 description: ~ For Whom the Autist Encodes ~
+distination: docs/
+exclude: README.md, LICENSE, Gemfile, jekyll-theme-tae.gempsec, _config.yml
+timezone: Europe/Amsterdam
+encoding: utf-8
