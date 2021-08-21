@@ -3,13 +3,13 @@ layout: default
 permalink: /
 title: Home
 ---
-# The Alchemist Encodes #
+## The Alchemist Encodes ##
 
 Hiya, we're The Alchemist Encodes, or TAE for short. Founded by Riven Skaye and
 lateinautumn, we're but a humble fansubbing group that doesn't really do a large
 volume of anime. Instead we focus on quality and improving what it is we put out there.
 
-## General idea
+## General idea ##
 
 We're mainly focused on being a group that puts out the best we releases we can make.
 That means we care about the effort put into it, with the time taken being a bit
@@ -29,7 +29,7 @@ to know if we can get along, at least on ~~a professional~~ an enthousiast level
 Getting along on a personal level is a definite bonus though.
 
 
-## Open positions
+## Open positions ##
 
 While we're always willing to welcome all kinds of people for all kinds of roles,
 there's always some roles that have a priority for bringing people in for. We'll
