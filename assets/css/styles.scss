@@ -2,6 +2,7 @@
 # Front Matter, this is a Jekyll requirement
 ---
 body {
+	margin: 0;
 	background-color: rgb(20, 20, 20);
 	color: rgb(200, 200, 200);
 	font-family: "Trebuchet MS"
@@ -63,6 +64,7 @@ body {
 #content-container {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 35px;
 }
 
 #content {
