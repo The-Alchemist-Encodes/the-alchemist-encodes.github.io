@@ -10,3 +10,6 @@ Gemfile.lock
 ###Komodo IDE/Edit###
 *.komodoproject
 .komodotools
+
+## Builds ##
+docs/*

@@ -1,0 +1,27 @@
+---
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TAC - {{ page.error }}</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="{{ 'assets/css/styles.css' | relative_url }}">
+	</head>
+	<body>
+		{% include header.html %}
+
+		<!-- page content container, needed for CSS magic -->
+		<section id="content-container">
+			<!-- page content -->
+			<section id="content">
+				{{ content }}
+				<p>
+					If this error persists, please contact us so we can resolve it.
+				</p>
+				<img src="{{ 'assets/images/Bertha_cannon.png' | relative_url }}" title="It's been a long day" alt="Wait, where'd Bertha and her cannon go?" id="errimg" />
+			</section>
+		</section>
+
+		{% include footer.html %}
+	</body>
+</html>
