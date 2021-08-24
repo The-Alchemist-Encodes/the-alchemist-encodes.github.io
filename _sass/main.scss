@@ -1,7 +1,4 @@
----
-# Front Matter, this is a Jekyll requirement
----
-@import "";
+/* Basic stuff for all pages */
 body {
 	margin: 0;
 	background-color: rgb(20, 20, 20);
@@ -9,6 +6,11 @@ body {
 	font-family: "Trebuchet MS";
 }
 
+h1, h2, h3 {
+	color: rgb(150, 75, 75);
+}
+
+/* These get included everywhere */
 #header {
 	display: flex;
 	justify-content: space-around;
@@ -69,58 +71,6 @@ body {
 	}
 }
 
-#content-container {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 35px;
-}
-
-#content {
-	max-width: 964px;
-	padding: 0px 30px;
-	min-height: 100%;
-
-	a {
-		color: rgb(150, 75, 75);
-	}
-
-	table {
-		min-width: 60%;
-		max-width: 85%;
-		margin: 0 auto;
-		border-collapse: collapse;
-		overflow-x: scroll;
-		scrollbar-color: rgb(60, 60, 60) rgb(130, 130, 130);
-		scrollbar-width: thin;
-
-		th {
-			background-color: rgb(130, 95, 95);
-			text-align: center;
-		}
-
-		tr:nth-child(even) {
-			background-color: rgb(30, 30, 30);
-		}
-
-		td, th {
-			border: 1px solid rgb(60, 50, 50);
-			padding: 3px;
-		}
-	}
-
-	#errimg {
-		max-width: 700px;
-		margin: 0 auto;
-	}
-
-	#construction {
-		border: 1px solid rgb(120, 60, 60);
-		border-radius: 10px;
-		text-align: center;
-		padding: 3%;
-	}
-}
-
 #footer-container {
 	display: flex;
 	justify-content: center;
@@ -154,8 +104,4 @@ body {
 
 #github-logo a {
 	display: flex;
-}
-
-h1, h2, h3 {
-	color: rgb(150, 75, 75);
 }
