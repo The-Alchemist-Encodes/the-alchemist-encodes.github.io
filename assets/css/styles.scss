@@ -5,7 +5,7 @@ body {
 	margin: 0;
 	background-color: rgb(20, 20, 20);
 	color: rgb(200, 200, 200);
-	font-family: "Trebuchet MS"
+	font-family: "Trebuchet MS";
 }
 
 #header {
@@ -22,10 +22,10 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-}
 
-#title-logo img {
-	border-radius: 50%;
+	img{
+		border-radius: 50%;
+	}
 }
 
 #title {
@@ -39,6 +39,10 @@ body {
 	background-color: rgb(120, 50, 50);
 	justify-content: center;
 	width: 100%;
+
+	.current{
+		background-color: rgb(100, 40, 40);
+	}
 }
 
 #navigation-links {
@@ -47,18 +51,21 @@ body {
 	height: 50px;
 	max-width: 1024px;
 	display: flex;
-	align-items: center;
-}
 
-#navigation-links a {
-	text-decoration: none;
-	color: rgb(200, 200, 200);
-}
+	a {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: rgb(200, 200, 200);
+		height: 100%;
+	}
 
-#navigation-links li {
-	display: inline;
-	padding: 0px 40px;
-	font-size: 18px;
+	li {
+		display: inline;
+		padding: 0px 40px;
+		font-size: 18px;
+		height: 100%;
+	}
 }
 
 #content-container {
@@ -70,6 +77,47 @@ body {
 #content {
 	max-width: 964px;
 	padding: 0px 30px;
+	min-height: 100%;
+
+	a {
+		color: rgb(150, 75, 75);
+	}
+
+	table {
+		min-width: 60%;
+		max-width: 85%;
+		margin: 0 auto;
+		border-collapse: collapse;
+		overflow-x: scroll;
+		scrollbar-color: rgb(60, 60, 60) rgb(130, 130, 130);
+		scrollbar-width: thin;
+
+		th {
+			background-color: rgb(130, 95, 95);
+			text-align: center;
+		}
+
+		tr:nth-child(even) {
+			background-color: rgb(30, 30, 30);
+		}
+
+		td, th {
+			border: 1px solid rgb(60, 50, 50);
+			padding: 3px;
+		}
+	}
+
+	#errimg {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	#construction {
+		border: 1px solid rgb(120, 60, 60);
+		border-radius: 10px;
+		text-align: center;
+		padding: 3%;
+	}
 }
 
 #footer-container {
@@ -86,21 +134,21 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	font-size: 18px;
-}
 
-#footer p {
-	padding: 0px 15px;
-}
+	p {
+		padding: 0px 15px;
+	}
 
-#footer p#github-logo {
-	display: flex;
-	align-items: center;
-}
+	p#github-logo {
+		display: flex;
+		align-items: center;
+	}
 
-#footer a {
-	text-decoration: none;
-	color: rgb(200, 200, 200);
-	font-weight: 900;
+	a {
+		text-decoration: none;
+		color: rgb(200, 200, 200);
+		font-weight: 900;
+	}
 }
 
 #github-logo a {

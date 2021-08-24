@@ -1,0 +1,41 @@
+# Make sure to represent dashes (-) and colons (:) by their HTML entities.
+# Anything that should be printed is also best put in as an HTML entity
+- name: Mon Colle Knights&#58; Densetsu no Fire Dragon
+  status: completed
+  type: Movie
+  staff:
+      ENC: Riven Skaye
+      TL: lateinautumn (dialogue), Roak (songs)
+      TLC: Roak
+      TS: eva, Shuuka
+      TM: LafferStyle (dialogue), wwwwwwww (songs)
+      KFX: wwwwwwww
+      ED: bthen13, Riven Skaye, wwwwwwww
+      QC: bthen13
+  thanks: Occultic;Loli for helping out with an editing pass over the song TL
+  
+- name: Highschool Aurabuster&#58; Hikari no Mezame
+  status: planned
+  type: OVA
+  staff:
+      ENC: Riven Skaye
+      TL: lateinautumn
+      TLC:
+      TS: Shuuka
+      TM: LafferStyle
+      KFX:
+      ED: bthen13, RivenSkaye
+      QC:
+
+- name: DNA Sights 999.9
+  status: planned
+  type: OVA
+  staff:
+      ENC: Riven Skaye
+      TL:
+      TLC:
+      TS: Shuuka
+      TM:
+      KFX:
+      ED: bthen13, RivenSkaye
+      QC:
