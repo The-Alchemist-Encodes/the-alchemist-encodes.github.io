@@ -1,2 +1,17 @@
 - name: Home
   link: /
+
+- name: Staff
+  link: /staff/
+
+- name: Recruitment
+  link: /recruitment.html
+
+- name: Projects
+  link: /projects/
+  
+- name: Contact
+  link: /contact.html
+
+- name: Grab our releases
+  link: https&#58;//nyaa.si/user/TheAlchemistEncodes
