@@ -1,6 +1,107 @@
+/* Basic stuff for all pages */
 body {
 	margin: 0;
 	background-color: rgb(20, 20, 20);
 	color: rgb(200, 200, 200);
 	font-family: "Trebuchet MS";
+}
+
+h1, h2, h3 {
+	color: rgb(150, 75, 75);
+}
+
+/* These get included everywhere */
+#header {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+	height: 230px;
+}
+
+#title-logo {
+	height: 250px;
+	width: 640px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	img{
+		border-radius: 50%;
+	}
+}
+
+#title {
+	text-align: center;
+}
+
+#navigation-bar {
+	max-width: 1024px;
+	display: flex;
+	height: 50px;
+	background-color: rgb(120, 50, 50);
+	justify-content: center;
+	width: 100%;
+
+	.current{
+		background-color: rgb(100, 40, 40);
+	}
+}
+
+#navigation-links {
+	margin-top: 0px;
+	padding: 0px 10px;
+	height: 50px;
+	max-width: 1024px;
+	display: flex;
+
+	a {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: rgb(200, 200, 200);
+		height: 100%;
+	}
+
+	li {
+		display: inline;
+		padding: 0px 40px;
+		font-size: 18px;
+		height: 100%;
+	}
+}
+
+#footer-container {
+	display: flex;
+	justify-content: center;
+	height: 100px;
+}
+
+#footer {
+	width: 100%;
+	max-width: 1024px;
+	background-color: rgb(120, 50, 50);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+
+	p {
+		padding: 0px 15px;
+	}
+
+	p#github-logo {
+		display: flex;
+		align-items: center;
+	}
+
+	a {
+		text-decoration: none;
+		color: rgb(200, 200, 200);
+		font-weight: 900;
+	}
+}
+
+#github-logo a {
+	display: flex;
 }
