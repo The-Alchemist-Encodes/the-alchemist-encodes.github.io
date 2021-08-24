@@ -13,7 +13,7 @@
 	<nav id="navigation-bar">
 		<ul id="navigation-links">
 			{% for n in site.data.nav %}
-			<li {% if page.url == n.link %}class="current"{% endif %}>
+			<li {% if page.url == n.link %}class="current"{% elsif n.link != "/" and page.dir == n.link %}class="current"{% endif %}>
 				<a href="{{ n.link }}" {% if n.link contains 'nyaa.si' %}target="_blank"{% endif %}>{{ n.name }}</a>
 			</li>
 			{% endfor %}
