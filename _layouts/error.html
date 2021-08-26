@@ -10,7 +10,7 @@
 		<meta name="theme-color" content="#642828" />
 		<meta property="og:site_name" content="The Alchemist Encodes" />
 		<meta property="og:title" content="TAE - {{ page.error }}" />
-		<meta id="ogimg" property="og:image" content="{{ 'assets/images/bertha.png' | relative_url }}" />
+		<meta id="ogimg" property="og:image" content="{{ 'assets/images/bertha???.png' | relative_url }}" />
 		<meta property="og:type" content="object" />
 		<meta property="og:url" content="https://tae.moe/{{ page.url }}" />
 		<meta property="og:description" content="{{ page.error }}" />
@@ -20,7 +20,9 @@
 			const d = new Date();
 			const h = d.getUTCHours();
 			if(h < 8 || h > 21){
-				ogimg.content = ogimg.content.replace(".png", "2.png");
+				ogimg.content = ogimg.content.replace("???", "");
+			} else {
+				ogimg.content = ogimg.content.replace("???", "2");
 			}
 		</script>
 	</head>
