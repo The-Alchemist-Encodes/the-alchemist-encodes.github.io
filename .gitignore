@@ -5,6 +5,7 @@
 .sass-cache
 _site
 Gemfile.lock
+.jekyll-metadata
 
 ##IDE / Dev env files##
 ###Komodo IDE/Edit###
