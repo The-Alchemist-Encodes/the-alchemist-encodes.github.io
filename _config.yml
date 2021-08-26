@@ -4,3 +4,4 @@ destination: docs/
 exclude: [README.md, LICENSE, Gemfile, jekyll-theme-tae.gempsec, _config.yml]
 timezone: Europe/Amsterdam
 encoding: utf-8
+favicon: assets/images/favicon.ico
