@@ -3,6 +3,7 @@ layout: default
 title: Recruitment
 rec: true
 permalink: /recruitment.html
+desc: All of the projects for which we still need people and what roles it is that need filling.
 ---
 ## Recruiting ##
 
@@ -16,7 +17,7 @@ Legend:
 |  | DNA Sights 999.9 | Highschool Aurabuster&#58; Hikari no Mezame |
 |--|------------------|---------------------------------------------|
 | ENC | X | X |
-| TL |  | X |
+| TL | X | X |
 | TLC |  |  |
 | TM |  | X |
 | TS | X | X |

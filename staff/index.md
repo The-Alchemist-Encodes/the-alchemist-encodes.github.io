@@ -2,6 +2,7 @@
 layout: default
 permalink: /staff/
 title: Staff
+desc: Information about the permanent staff for The Alchemist Encodes. These will be frequently returning names.
 ---
 {% include construction.html %}
 ## Meet the staff ##
@@ -14,4 +15,3 @@ generally be found on all of our releases.
 - Name: {{ s.name }}<br />
 Contributions: {{ s.roles }}
 {% endfor %}
-

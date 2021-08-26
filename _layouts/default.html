@@ -3,9 +3,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>TAC - {{ page.title }}</title>
+		<title>TAE - {{ page.title }}</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="{{ 'assets/css/default.css' | relative_url }}">
+		<!-- Rich embed preview stuff -->
+		<meta property="og:site_name" content="The Alchemist Encodes" />
+		<meta property="og:title" content="TAE - {{ page.title }}" />
+		<meta id="ogimg" property="og:image" content="{{ 'assets/images/bertha2.png' | relative_url }}" />
+		<meta property="og:type" content="object" />
+		<meta property="og:url" content="https://tae.moe/{{ page.url }}" />
+		<meta property="og:description" content="{{ page.desc | default: 'Welcome to The Alchemist Encodes!' }}" />
+		<!-- Trying to set the image based on fetch time -->
+		<script type="text/javascript">
+			const ogimg = document.getElementById("ogimg");
+			const d = new Date();
+			const h = d.getUTCHours();
+			if(h < 8 || h > 21){
+				ogimg.content = ogimg.content.replace("2.png", ".png");
+			}
+		</script>
 	</head>
 	<body>
 		{% include header.html %}
