@@ -3,28 +3,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>TAC - {{ page.error }}</title>
+		<title>TAE - {{ page.error }}</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="{{ 'assets/css/default.css' | relative_url }}">
+		<link rel="stylesheet" type="text/css" href="{{ 'assets/css/default.css' | relative_url }}" />
+		<link rel="icon" href="{{ site.favicon | relative_url }}" />
 		<!-- Rich embed preview stuff -->
 		<meta name="theme-color" content="#642828" />
 		<meta property="og:site_name" content="The Alchemist Encodes" />
 		<meta property="og:title" content="TAE - {{ page.error }}" />
-		<meta id="ogimg" property="og:image" content="{{ 'assets/images/bertha???.png' | relative_url }}" />
+		<meta id="ogimg" property="og:image" content="{{ 'assets/images/bertha.png' | relative_url }}" />
 		<meta property="og:type" content="object" />
 		<meta property="og:url" content="https://tae.moe/{{ page.url }}" />
 		<meta property="og:description" content="{{ page.error }}" />
-		<!-- Trying to set the image based on fetch time -->
-		<script type="text/javascript">
-			const ogimg = document.getElementById("ogimg");
-			const d = new Date();
-			const h = d.getUTCHours();
-			if(h < 8 || h > 21){
-				ogimg.content = ogimg.content.replace("???", "");
-			} else {
-				ogimg.content = ogimg.content.replace("???", "2");
-			}
-		</script>
 	</head>
 	<body>
 		{% include header.html %}
@@ -33,6 +23,7 @@
 		<section id="content-container">
 			<!-- page content -->
 			<section id="content">
+				<h2>{{ page.error }}</h2>
 				{{ content }}
 				<p>
 					If this error persists, please contact us so we can resolve it.
