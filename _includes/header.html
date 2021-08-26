@@ -5,7 +5,7 @@
 		<img id="logo" src="{{ 'assets/images/bertha2.png' | relative_url }}" title="Bertha, our cute mascot!" alt="If you see this, Bertha has been kidnapped!" />
 		<div id="title">
 			<h1>The Alchemist Encodes</h1>
-			<h4>~ For Whom the Autist Encodes ~</h4>
+			<h4>~ <i>For Whom the Autist Encodes</i> ~</h4>
 		</div>
 	</div>
 
@@ -13,7 +13,7 @@
 	<nav id="navigation-bar">
 		<ul id="navigation-links">
 			{% for n in site.data.nav %}
-			<li {% if page.url == n.link %}class="current"{% endif %}>
+			<li {% if page.url == n.link %}class="current"{% elsif n.link != "/" and page.dir == n.link %}class="current"{% endif %}>
 				<a href="{{ n.link }}" {% if n.link contains 'nyaa.si' %}target="_blank"{% endif %}>{{ n.name }}</a>
 			</li>
 			{% endfor %}

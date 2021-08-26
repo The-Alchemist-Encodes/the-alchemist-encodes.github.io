@@ -8,8 +8,10 @@ permalink: /recruitment.html
 
 The following table lists all of the roles for the projects we're currently working
 on or planning to work on.<br />
-Roles that have been filled will be marked with an X, anything else is free to
-try your hand at. Roles that aren't required are marked with a -.
+Legend:
+- Position filled: X
+- Position not required: `-`
+- _Empty means the position is open._
 
 |  | DNA Sights 999.9 | Highschool Aurabuster&#58; Hikari no Mezame |
 |--|------------------|---------------------------------------------|
@@ -21,3 +23,7 @@ try your hand at. Roles that aren't required are marked with a -.
 | ED | X | X |
 | QC |  |  |
 | KFX |  |  |
+
+&nbsp;
+
+Please [contact us](/contact.html) if you're interested.
