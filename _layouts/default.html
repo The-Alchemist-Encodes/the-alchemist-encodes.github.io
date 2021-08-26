@@ -14,14 +14,6 @@
 		<meta property="og:type" content="object" />
 		<meta property="og:url" content="https://tae.moe/{{ page.url }}" />
 		<meta property="og:description" content="{{ page.desc | default: 'Welcome to The Alchemist Encodes!' }}" />
-		<!-- Trying to set the image based on fetch time -->
-		<script type="text/javascript">
-			const ogimg = document.getElementById("ogimg");
-			const d = new Date();
-			const h = d.getUTCHours();
-			if(h < 8 || h > 21){
-				ogimg.content = ogimg.content.replace("2.png", ".png");
-			}
 		</script>
 	</head>
 	<body>
