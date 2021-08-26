@@ -1,9 +1,33 @@
+@font-face{
+	font-family: PTSans;
+	src: url(/assets/fonts/PTSans_normal.ttf);
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face{
+	font-family: PTSans;
+	src: url(/assets/fonts/PTSans_bold.ttf);
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face{
+	font-family: PTSans;
+	src: url(/assets/fonts/PTSans_italic.ttf);
+	font-style: italic;
+	font-weight: normal;
+}
+@font-face{
+	font-family: PTSans;
+	src: url(/assets/fonts/PTSans_bolditalic.ttf);
+	font-style: italic;
+	font-weight: bold;
+}
 /* Basic stuff for all pages */
 body {
 	margin: 0;
 	background-color: rgb(20, 20, 20);
 	color: rgb(200, 200, 200);
-	font-family: "Trebuchet MS";
+	font-family: PTSans;
 }
 
 h1, h2, h3 {
