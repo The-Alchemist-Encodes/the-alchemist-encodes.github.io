@@ -2,6 +2,7 @@
 layout: default
 permalink: /contact.html
 title: Contact
+desc: Information on how to contact us.
 ---
 ## Contacting The Alchemist Encodes ##
 

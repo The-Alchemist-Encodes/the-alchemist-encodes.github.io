@@ -2,6 +2,7 @@
 layout: default
 permalink: /
 title: Home
+desc: Welcome to The Alchemist Encodes, this is who we are and what we're all about.
 ---
 ## The Alchemist Encodes ##
 
