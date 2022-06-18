@@ -6,9 +6,9 @@ desc: Welcome to The Alchemist Encodes, this is who we are and what we're all ab
 ---
 ## The Alchemist Encodes ##
 
-Hiya, we're The Alchemist Encodes, or TAE for short. Founded by Riven Skaye and
-lateinautumn, we're but a humble fansubbing group that doesn't focus on a large
-volume of anime. Instead we focus on releasing the highest quality we can achieve.
+Welcome, we're The Alchemist Encodes, or TAE for short. Founded by Riven Skaye and
+lateinautumn, we're but a humble fansubbing group that focuses on quality releases
+over quantity.
 
 ## General idea ##
 
