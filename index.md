@@ -12,29 +12,19 @@ volume of anime. Instead we focus on releasing the highest quality we can achiev
 
 ## General idea ##
 
-Our main focus is being a group that puts its all into making the best releases
-we can. That means we put a great deal of passion, effort and time into our projects.
-As a result we can take a bit longer than other groups and as such, we don't
-have set release schedules.<br />An important sidenote is that we don't want projects
-to indefinitely stall either, so we try and work on them when we can.
+Our main focus is putting out high quality releases.
+That means we spend a lot more time and energy into a release, causing us to
+seemingly _stall_ or _starve_ our projects. Don't worry though, we'll release
+them eventually.
 
-Another thing to note is that we will _never_ be a seasonal group. Due to preferring
-to take our time so we can ensure a level of quality, and the lack of a set
-release schedule to allow us that freedom, it just won't work.<br />
-If you care about seasonals, grab a seasonal group's releases instead. If you'd
-prefer to have us working on it, you're free to ask us to pick it up once BDs are out.
+This also means that we **don't do seasonals**. The pace required for that
+simply means having to make compromises we're not willing to make.
+There's other groups that do those, and we'd be happy to provide recommendations
+for seasonals over [in our discord server](https://discord.gg/weU8m754u9).
 
-As for what shows we pick, that's a bit random. We pick up whatever we feel
-is worth putting our time into. That means we'll generally be releasing things
-that don't have any (watchable) releases out yet. If there's a release out there
-that we feel is good enough to watch, then there's not much point in trying to
-make something even better. Especially considering the amount of things that were
-never released.
+Last but not least, we're more than willing to help someone polish their skills,
+or to take in more staff to run projects with us. For information about our
+current projects, please take a look at [the recruitment page](/recruitment.html).
 
-In the vein of true modern fansubbing, we're always willing to look at other people's
-skills to try and bring them on board. Check out our [recruitment page](/recruitment.html) to see what
-roles we're still looking to fill for current and upcoming projects.
-Or maybe even for a more permanent position as part of the core team!<br />
-Naturally we'd like a chance to see what you can do and some time to get to know you,
-but so long as you have ~~a professional~~ an enthousiast level and get along,
-we're more than willing to give you a shot.
+_Some pages and areas on the site and the Discord server are still under construction.
+Thank you for your patience and understanding._
