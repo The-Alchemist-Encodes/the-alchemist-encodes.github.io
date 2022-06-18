@@ -15,7 +15,11 @@
 		<meta property="og:type" content="object" />
 		<meta property="og:url" content="https://tae.moe/{{ page.url }}" />
 		<meta property="og:description" content="{{ page.desc | default: 'Welcome to The Alchemist Encodes!' }}" />
-		</script>
+		{% if page.css %}
+			{% for css in page.css %}
+				<link rel="stylesheet" type="text/css" href="{{ 'assets/css/' | append: css | relative_url }}" />
+			{% endfor %}
+		{% endif %}
 	</head>
 	<body>
 		{% include header.html %}
