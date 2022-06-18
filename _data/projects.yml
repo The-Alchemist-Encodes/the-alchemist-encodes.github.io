@@ -5,8 +5,11 @@
 #   2: planned
 #   3: completed
 - name: Mon Colle Knights&#58; Densetsu no Fire Dragon
+  id: MCK_movie
   status: 3
   type: Movie
+  thanks: ['Occultic;Loli for helping out with an editing pass over the song TL']
+  img: MCK.jpg
   staff:
       ENC: Riven Skaye
       TL: lateinautumn (dialogue), Roak (songs)
@@ -16,12 +19,11 @@
       KFX: wwwwwwww
       ED: bthen13, Riven Skaye, wwwwwwww
       QC: bthen13
-  thanks: Occultic;Loli for helping out with an editing pass over the song TL
-  img: MCK.jpg
 
 - name: Highschool Aurabuster&#58; Hikari no Mezame
   status: 1
   type: OVA
+  img: aurabusters.jpg
   staff:
       ENC: Riven Skaye
       TL: lateinautumn
@@ -34,7 +36,6 @@
 
 - name: DNA Sights 999.9
   status: 2
-  type: OVA
   staff:
       ENC: Riven Skaye
       TL:
