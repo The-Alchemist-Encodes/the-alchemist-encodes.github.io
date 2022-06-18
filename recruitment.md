@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Recruitment
-rec: true
 permalink: /recruitment.html
 desc: All of the projects for which we still need people and what roles it is that need filling.
 ---

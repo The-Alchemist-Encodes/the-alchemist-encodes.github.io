@@ -10,8 +10,6 @@ Welcome, we're The Alchemist Encodes, or TAE for short. Founded by Riven Skaye a
 lateinautumn, we're but a humble fansubbing group that focuses on quality releases
 over quantity.
 
-## General idea ##
-
 Our main focus is putting out high quality releases.
 That means we spend a lot more time and energy into a release, causing us to
 seemingly _stall_ or _starve_ our projects. Don't worry though, we'll release
