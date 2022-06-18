@@ -21,6 +21,7 @@
       QC: bthen13
 
 - name: Highschool Aurabuster&#58; Hikari no Mezame
+  id: Aurabuster
   status: 1
   type: OVA
   img: aurabusters.jpg
@@ -35,6 +36,7 @@
       QC:
 
 - name: DNA Sights 999.9
+  id: DNA999
   status: 2
   type: OVA
   img: DNA999-9.jpg

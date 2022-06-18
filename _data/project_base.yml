@@ -1,0 +1,15 @@
+name: ~ # String
+  id: ~ # String
+  status: ~ # int
+  type: ~ # String, one you'd see on list tracker sites like OVA, Movie, TV, etc
+  thanks: ~ # Array of strings
+  img: ~ # String, just the filename for the image, not the path
+  staff:
+      ENC: ~ # String
+      TL: ~ # String
+      TLC: ~ # String
+      TS: ~ # String
+      TM: ~ # String
+      KFX: ~ # String
+      ED: ~ # String
+      QC: ~ # String
