@@ -1,56 +1,57 @@
 ---
-# Correct placement of Front Matter is pain
+
 ---
-@import "main";
+@import 'main';
 
 #content-container {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
 }
 
 #content {
-	max-width: 964px;
-	padding: 0px 30px;
-	min-height: 100%;
+  max-width: 964px;
+  min-height: 100%;
+  padding: 0 30px;
 
-	a {
-		color: rgb(150, 75, 75);
-	}
+  a {
+    color: $redtext;
+  }
 
-	table {
-		min-width: 60%;
-		max-width: 85%;
-		margin: 0 auto;
-		border-collapse: collapse;
-		overflow-x: scroll;
-		scrollbar-color: rgb(60, 60, 60) rgb(130, 130, 130);
-		scrollbar-width: thin;
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 85%;
+    min-width: 60%;
+    overflow-x: scroll;
+    scrollbar-color: $scrollbarcolor;
+    scrollbar-width: thin;
 
-		th {
-			background-color: rgb(130, 95, 95);
-			text-align: center;
-		}
+    th {
+      background-color: $thbg;
+      text-align: center;
+    }
 
-		tr:nth-child(even) {
-			background-color: rgb(30, 30, 30);
-		}
+    tr:nth-child(even) {
+      background-color: $theven;
+    }
 
-		td, th {
-			border: 1px solid rgb(60, 50, 50);
-			padding: 3px;
-		}
-	}
+    td,
+	th {
+      border: 1px solid $tableborder;
+      padding: 3px;
+    }
+  }
 
-	#errimg {
-		max-width: 700px;
-		margin: 0 auto;
-	}
+  #errimg {
+    margin: 0 auto;
+    max-width: 700px;
+  }
 
-	#construction {
-		border: 1px solid rgb(120, 60, 60);
-		border-radius: 10px;
-		text-align: center;
-		padding: 3%;
-	}
+  #construction {
+    border: 1px solid $constructionborder;
+    border-radius: 10px;
+    padding: 3%;
+    text-align: center;
+  }
 }

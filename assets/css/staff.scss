@@ -1,4 +1,41 @@
 ---
 # Front Matter because this is /assets/css and not /_sass
 ---
-@import "main";
+@import 'main';
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .card {
+    border-color: $redtext;
+    border-radius: 5%;
+    display: block;
+
+    .projectname {
+      display: block;
+    }
+
+    .cardcontent {
+      display: flex;
+      flex-direction: row;
+
+      img,
+      div {
+        display: inline-block;
+        margin-left: 1em;
+      }
+    }
+  }
+}
+
+.cardtext {
+  p {
+    display: block;
+
+    ul {
+      display: inline-block;
+    }
+  }
+}

@@ -1,6 +1,23 @@
+preprocess_command: "sed '1{/^---$/{:a N;/---$/!ba;d}}'"
+
 linters:
   IdSelector:
     enabled: false
 
   QualifyingElement:
     enabled: false
+
+  SelectorDepth:
+    max_depth: 5
+
+  NestingDepth:
+    max_depth: 5
+
+  PropertySpelling:
+    enabled: false
+
+  EmptyRule:
+    exclude:
+      - 'assets/css/default.scss'
+      - 'assets/css/projects.scss'
+      - 'assets/css/staff.scss'
