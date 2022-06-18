@@ -1,0 +1,23 @@
+<div class="card">
+    <h3 class="projectname">{{ proj.name }} ({{ proj.type }})</h3>
+    <div class="cardcontent">
+        {% if proj.img %}<img src='{{ "assets/images/" | append: proj.img | relative_url }}'/>{% endif %}
+        <div class="cardtext">
+        <p>Status: {% if proj.status == 1 %}In progress
+            {% elsif proj.status == 2 %}Planned
+            {% elsif proj.status == 3 %}Completed
+            {% endif %}</p>
+        <p>Staff:</p>
+        <ul class="staffcard">
+            <li><b>ENC</b>: {{ proj.staff.ENC }}</li>
+            <li><b>TL</b>: {{ proj.staff.TL }}</li>
+            <li><b>TLC</b>: {{ proj.staff.TLC }}</li>
+            <li><b>TS</b>: {{ proj.staff.TS }}</li>
+            <li><b>TM</b>: {{ proj.staff.TM }}</li>
+            <li><b>KFX</b>: {{ proj.staff.KFX }}</li>
+            <li><b>ED</b>: {{ proj.staff.ED }}</li>
+            <li><b>QC</b>: {{ proj.staff.QC }}</li>
+        </ul>
+    </div>
+    </div>
+</div>
