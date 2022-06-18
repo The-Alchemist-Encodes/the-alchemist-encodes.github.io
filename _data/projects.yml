@@ -1,7 +1,11 @@
 # Make sure to represent dashes (-) and colons (:) by their HTML entities.
 # Anything that should be printed is also best put in as an HTML entity
+# Status:
+#   1: in progress
+#   2: planned
+#   3: completed
 - name: Mon Colle Knights&#58; Densetsu no Fire Dragon
-  status: completed
+  status: 3
   type: Movie
   staff:
       ENC: Riven Skaye
@@ -13,9 +17,10 @@
       ED: bthen13, Riven Skaye, wwwwwwww
       QC: bthen13
   thanks: Occultic;Loli for helping out with an editing pass over the song TL
-  
+  img: MCK.jpg
+
 - name: Highschool Aurabuster&#58; Hikari no Mezame
-  status: planned
+  status: 1
   type: OVA
   staff:
       ENC: Riven Skaye
@@ -28,7 +33,7 @@
       QC:
 
 - name: DNA Sights 999.9
-  status: planned
+  status: 2
   type: OVA
   staff:
       ENC: Riven Skaye
