@@ -1,13 +1,4 @@
-$bg: rgb(20, 20, 20);
-$textdefault: rgb(200, 200, 200);
-$redtext: rgb(150, 75, 75);
-$redblock: rgb(120, 50, 50);
-$currentnav: rgb(100, 40, 40);
-$scrollbarcolor: rgb(60, 60, 60) rgb(130, 130, 130);
-$thbg: rgb(130, 95, 95);
-$theven: rgb(30, 30, 30);
-$tableborder: rgb(60, 50, 50);
-$constructionborder: rgb(120, 60, 60);
+@import 'vars';
 
 @font-face {
   font-family: PTSans;
@@ -109,6 +100,34 @@ h3 {
     font-size: 1.25em;
     height: 100%;
     padding: 0 40px;
+  }
+}
+
+#content-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+#content {
+  max-width: 964px;
+  min-height: 100%;
+  padding: 0 30px;
+
+  a {
+    color: $redtext;
+  }
+
+  #errimg {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  #construction {
+    border: 1px solid $constructionborder;
+    border-radius: 10px;
+    padding: 3%;
+    text-align: center;
   }
 }
 

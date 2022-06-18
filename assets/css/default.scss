@@ -3,21 +3,7 @@
 ---
 @import 'main';
 
-#content-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 35px;
-}
-
 #content {
-  max-width: 964px;
-  min-height: 100%;
-  padding: 0 30px;
-
-  a {
-    color: $redtext;
-  }
-
   table {
     border-collapse: collapse;
     margin: 0 auto;
@@ -41,17 +27,5 @@
       border: 1px solid $tableborder;
       padding: 3px;
     }
-  }
-
-  #errimg {
-    margin: 0 auto;
-    max-width: 700px;
-  }
-
-  #construction {
-    border: 1px solid $constructionborder;
-    border-radius: 10px;
-    padding: 3%;
-    text-align: center;
   }
 }
