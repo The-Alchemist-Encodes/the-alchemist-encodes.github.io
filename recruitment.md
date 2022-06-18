@@ -5,6 +5,7 @@ rec: true
 permalink: /recruitment.html
 desc: All of the projects for which we still need people and what roles it is that need filling.
 ---
+{% include construction.html %}
 ## Recruiting ##
 
 The following table lists all of the roles for the projects we're currently working
