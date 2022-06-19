@@ -8,13 +8,14 @@ desc: A listing of all our past, present and future projects.
 {% include construction.html %}
 
 <script type="text/javascript">
-	var maxitemsperpage = 5
+	var maxitemsperpage = 5;
 	var curpage = -1;
 	var cards;
 	var current;
 	var planned;
 	var completed;
 	function change_page(next = true, pages = 1) {
+		if (pages === 0) { return; }
 		// defaults to work with to get the current page
 		let start = curpage * maxitemsperpage;
 		let end = (curpage + 1) * maxitemsperpage;
@@ -46,9 +47,7 @@ desc: A listing of all our past, present and future projects.
 			}
 			// otherwise, if trying to load the "-1th" page that doesn't exist, wrap back to the last page
 			else {
-				let a = cards.length % maxitemsperpage;
-				let extra_page = a > 0 ? 0 : 1;
-				curpage = ((cards.length - a) / maxitemsperpage) + extra_page;
+				curpage = maxpagecount;
 				// this logic ensures that when we load the last page, we only load the last x remaining cards
 				// instead of also including stuff from prior pages to fill in the "max items per page" threshold
 				if (cards.length % maxitemsperpage === 0) {
@@ -104,12 +103,30 @@ desc: A listing of all our past, present and future projects.
 	{% include projectcard.html %}
 	{% endfor %}
 	<button type="button" onclick="change_page(false)"> &lt; </button>
+	<p id="cardnav"></p>
 	<button type="button" onclick="change_page(true)"> &gt; </button>
 </div>
 <script type="text/javascript">
 	cards = Array.from(document.getElementsByClassName('card'));
+	let a = cards.length % maxitemsperpage;
+	let extra_page = a > 0 ? 1 : 0;
+	var maxpagecount = ((cards.length - a) / maxitemsperpage) + extra_page;
 	completed = cards.filter(item => { return item.classList.contains('3'); });
 	current = cards.filter(item => { return item.classList.contains('1'); });
 	planned = cards.filter(item => { return item.classList.contains('2'); });
 	change_page();
+	let cardnav = document.getElementById("cardnav");
+	if (maxpagecount > 1) {
+		for (let p = 0; p < maxpagecount; p++) {
+			let pagelink = document.createElement("a");
+			pagelink.classList += `jump_to_${p}`;
+			pagelink.innerText = p + 1;
+			cardnav.appendChild(pagelink);
+			pagelink.onclick = (event) => {
+				let target = Number(event.target.classList[0].replace('jump_to_', ''));
+				let jump = target - curpage;
+				change_page(true, jump);
+			};
+		}
+	}
 </script>
