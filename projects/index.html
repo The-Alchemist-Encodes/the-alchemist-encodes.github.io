@@ -8,8 +8,68 @@ desc: A listing of all our past, present and future projects.
 {% include construction.html %}
 <h2>Projects we did or will do</h2>
 <div id="cards">
-{% assign sprojs = site.data.projects | sort: "status", "last" %}
-{% for proj in sprojs %}
+	{% assign sprojs = site.data.projects | sort: "status", "last" %}
+	{% for proj in sprojs %}
 	{% include projectcard.html %}
-{% endfor %}
+	{% endfor %}
+	<button type="button" onclick="change_page(false)"> &lt; </button>
+	<button type="button" onclick="change_page(true)"> &gt; </button>
 </div>
+<script type="text/javascript">
+	var maxitemsperpage = 2
+	var curpage = -1;
+	var cards = Array.from(document.getElementsByClassName('card'));
+	function change_page(next = true) {
+		// defaults to work with to get the current page
+		let start = curpage * maxitemsperpage;
+		let end = (curpage + 1) * maxitemsperpage;
+		// set old page
+		let oldpage = cards.slice(start, end);
+		// increment current page based on user input
+		if (next === true) {
+			curpage++;
+		}
+		else {
+			curpage--;
+		}
+		// start working on the new page
+		let newstart = curpage * maxitemsperpage;
+		let newend = (curpage + 1) * maxitemsperpage;
+		// handle wrapping
+		let wrap = false;
+		// first check if the start of the new page is out of range
+		if (newstart >= cards.length || newstart < 0) {
+			wrap = true;
+		}
+		// wrapping logic
+		if (wrap === true) {
+			// if trying to load next page when there isn't one then wrap back to the first page instead
+			if (next === true) {
+				newstart = 0;
+				newend = maxitemsperpage;
+				curpage = 0;
+			}
+			// otherwise, if trying to load the "-1th" page that doesn't exist, wrap back to the last page
+			else {
+				let a = cards.length % maxitemsperpage;
+				let extra_page = a > 0 ? 0 : 1;
+				curpage = ((cards.length - a) / maxitemsperpage) + extra_page;
+				// this logic ensures that when we load the last page, we only load the last x remaining cards
+				// instead of also including stuff from prior pages to fill in the "max items per page" threshold
+				if (cards.length % maxitemsperpage === 0) {
+					newstart = cards.length - maxitemsperpage;
+				}
+				else {
+					newstart = cards.length - (cards.length % maxitemsperpage);
+				}
+				newend = cards.length;
+			}
+		}
+		// set new page
+		let newpage = cards.slice(newstart, newend)
+		// unload the old page and load the new page
+		for (let i = 0; i < oldpage.length; i++) { oldpage[i].style.display = ""; }
+		for (let i = 0; i < newpage.length; i++) { newpage[i].style.display = "block"; }
+	}
+	change_page();
+</script>
