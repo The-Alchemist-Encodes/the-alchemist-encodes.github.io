@@ -6,20 +6,15 @@ css: ['projects.css']
 desc: A listing of all our past, present and future projects.
 ---
 {% include construction.html %}
-<h2>Projects we did or will do</h2>
-<div id="cards">
-	{% assign sprojs = site.data.projects | sort: "status", "last" %}
-	{% for proj in sprojs %}
-	{% include projectcard.html %}
-	{% endfor %}
-	<button type="button" onclick="change_page(false)"> &lt; </button>
-	<button type="button" onclick="change_page(true)"> &gt; </button>
-</div>
+
 <script type="text/javascript">
 	var maxitemsperpage = 5
 	var curpage = -1;
-	var cards = Array.from(document.getElementsByClassName('card'));
-	function change_page(next = true) {
+	var cards;
+	var current;
+	var planned;
+	var completed;
+	function change_page(next = true, pages = 1) {
 		// defaults to work with to get the current page
 		let start = curpage * maxitemsperpage;
 		let end = (curpage + 1) * maxitemsperpage;
@@ -27,10 +22,10 @@ desc: A listing of all our past, present and future projects.
 		let oldpage = cards.slice(start, end);
 		// increment current page based on user input
 		if (next === true) {
-			curpage++;
+			curpage += pages;
 		}
 		else {
-			curpage--;
+			curpage -= pages;
 		}
 		// start working on the new page
 		let newstart = curpage * maxitemsperpage;
@@ -71,5 +66,50 @@ desc: A listing of all our past, present and future projects.
 		for (let i = 0; i < oldpage.length; i++) { oldpage[i].style.display = ""; }
 		for (let i = 0; i < newpage.length; i++) { newpage[i].style.display = "block"; }
 	}
+	function filter_cards() {
+		let show_completed = document.getElementById("box_Completed").checked;
+		let show_current = document.getElementById("box_Current").checked;
+		let show_planned = document.getElementById("box_Planned").checked;
+		for (let card of cards) { card.style.display = ""; }
+		// if none or all are to be shown, show all
+		if ((!show_completed && !show_current && !show_planned) || (show_completed && show_current && show_planned)) {
+			cards = current.concat(planned).concat(completed);
+		} else {
+			cards = [];
+			if (show_current) { cards = cards.concat(current); }
+			if (show_planned) { cards = cards.concat(planned); }
+			if (show_completed) { cards = cards.concat(completed); }
+		}
+		curpage = -1;
+		return change_page();
+	}
+</script>
+
+<h2>Projects we did or will do</h2>
+<div>
+	<p>
+		<label for="box_Completed">Completed</label>
+		<input id="box_Completed" name="box_Completed" type="checkbox" onchange="filter_cards()" />
+		<br />
+		<label for="box_Current">In progress</label>
+		<input id="box_Current" name="box_Current" type="checkbox" onchange="filter_cards()" />
+		<br />
+		<label for="box_Planned">Planned</label>
+		<input id="box_Planned" name="box_Planned" type="checkbox" onchange="filter_cards()" />
+	</p>
+</div>
+<div id="cards">
+	{% assign sprojs = site.data.projects | sort: "status", "last" %}
+	{% for proj in sprojs %}
+	{% include projectcard.html %}
+	{% endfor %}
+	<button type="button" onclick="change_page(false)"> &lt; </button>
+	<button type="button" onclick="change_page(true)"> &gt; </button>
+</div>
+<script type="text/javascript">
+	cards = Array.from(document.getElementsByClassName('card'));
+	completed = cards.filter(item => { return item.classList.contains('3'); });
+	current = cards.filter(item => { return item.classList.contains('1'); });
+	planned = cards.filter(item => { return item.classList.contains('2'); });
 	change_page();
 </script>

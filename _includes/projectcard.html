@@ -1,4 +1,4 @@
-<div class="card">
+<div class="{{ proj.status }} card">
     <h3 class="projectname" id="{{ proj.id }}">{{ proj.name }} ({{ proj.type }})</h3>
     <div class="cardcontent">
         {% if proj.img %}<img src='{{ "assets/images/" | append: proj.img | relative_url }}' />{% endif %}
